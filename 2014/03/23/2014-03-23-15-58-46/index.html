@@ -118,11 +118,11 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '3OES33DBY1',
+      apiKey: '74564b007599f495ada148f330255f26',
+      indexName: 'dev_lvc',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"搜索...","hits_empty":"未发现与「${query}」相关的内容","hits_stats":"${hits} 条相关条目，使用了 ${time} 毫秒"}
     }
   };
 </script>
@@ -776,7 +776,7 @@
     // Popup Window;
     var isfetched = false;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length == 0) {
       search_path = "search.xml";
     }
@@ -925,5 +925,21 @@
 
   
 
+  
+    
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script type="text/javascript" src="/js/src/algolia.js?v=5.1.0"></script>
+
+  
 </body>
 </html>
