@@ -1688,7 +1688,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f9a6ff;
+  background: #f482ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2287,6 +2287,34 @@ pre .javascript .function {
 .category-all-page .category-list-child {
   padding-left: 10px;
 }
+.author-all-page .author-all-title {
+  text-align: center;
+}
+.author-all-page .author-all {
+  margin-top: 20px;
+}
+.author-all-page .author-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.author-all-page .author-list-item {
+  margin: 5px 10px;
+}
+.author-all-page .author-list-count {
+  color: #bbb;
+}
+.author-all-page .author-list-count:before {
+  display: inline;
+  content: " (";
+}
+.author-all-page .author-list-count:after {
+  display: inline;
+  content: ") ";
+}
+.author-all-page .author-list-child {
+  padding-left: 10px;
+}
 #schedule ul#event-list {
   padding-left: 30px;
 }
@@ -2729,17 +2757,6 @@ hr {
   margin-top: 5px;
   padding-top: 3px;
 }
-@media (max-width: 767px) {
-  .site-search {
-    float: none;
-    padding: 0 10px;
-  }
-}
-@media (max-width: 767px) {
-  .container .main-inner {
-    width: auto;
-  }
-}
 .page-post-detail .post-title,
 .page-post-detail .post-meta {
   text-align: center;
@@ -2750,15 +2767,17 @@ hr {
 .page-post-detail .post-meta {
   margin-bottom: 60px;
 }
+.page-home .post {
+  margin-top: 2em;
+  padding: 1em;
+  border: solid 1px #d3d3d3;
+}
+.page-home .post-more-link {
+  display: none;
+}
 .pagination {
   margin: 120px 0 0;
   text-align: left;
-}
-@media (max-width: 767px) {
-  .pagination {
-    margin: 80px 10px 0;
-    text-align: center;
-  }
 }
 .footer {
   margin-top: 80px;
@@ -2770,11 +2789,12 @@ hr {
   margin: 0 auto;
   text-align: left;
 }
-@media (max-width: 767px) {
-  .footer-inner {
-    width: auto;
-    text-align: center;
-  }
+.posts-expand .post-body ul li.task-list-item {
+  list-style: none;
+}
+.posts-expand .post-body ul li.task-list-item .task-list-item-checkbox {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
 }
 ul.search-result-list {
   padding-left: 0px;
